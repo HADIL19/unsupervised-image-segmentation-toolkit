@@ -154,6 +154,4 @@ CI runs both on every push/PR via GitHub Actions (`.github/workflows/ci.yml`).
 
 
 
-## License
 
-MIT — see [LICENSE](LICENSE).
