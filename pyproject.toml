@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imgseg"
+version = "1.0.0"
+description = "Multi-scene classical computer-vision segmentation pipeline (GrabCut, SLIC, K-Means, DBSCAN) with a shared CLI and Streamlit demo."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "matplotlib",
+    "scikit-learn",
+    "scikit-image",
+    "scipy",
+    "pandas",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8"]
+demo = ["streamlit"]
+
+[project.scripts]
+imgseg = "imgseg.pipeline:main"
+
+[tool.setuptools.packages.find]
+include = ["imgseg", "imgseg.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

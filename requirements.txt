@@ -1,0 +1,13 @@
+numpy
+opencv-python
+matplotlib
+scikit-learn
+scikit-image
+scipy
+pandas
+Pillow
+
+# Optional, only needed for the interactive demo / dev tooling:
+# streamlit
+# pytest
+# flake8
